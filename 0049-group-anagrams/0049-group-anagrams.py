@@ -1,6 +1,6 @@
 class Solution(object):
     def groupAnagrams(self, strs):
-        map_string = {}  # Dicionário para armazenar grupos de anagramas
+        map_string = {}
 
         for string in strs:
             count = [0] * 26

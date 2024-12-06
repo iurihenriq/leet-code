@@ -3,22 +3,13 @@ class Solution(object):
         count_w1 = Counter(words1)
         count_w2 = Counter(words2)
 
-        aux = []
-        result = 0
+        result = []
 
-        for c in count_w1:
-            if count_w1[i] == 1:
-                aux.append(c)
-        
-        for c in count_w2:
-            if count_w2[i] == 1:
-                aux.append(c)
+        for word in count_w1:
+            if count_w1[word] == 1 and count_w2[word] == 1:
+                result.append(word)
 
-        for a in aux:
-            if aux.count(a) = 2:
-                result += 1
-
-        return result
+        return len(result)
         
                 
 

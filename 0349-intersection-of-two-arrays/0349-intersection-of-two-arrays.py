@@ -6,8 +6,12 @@ class Solution(object):
         :rtype: List[int]
         """
         result = []
-        for num in nums1:
-            if num in nums2 and num not in result:
+
+        set_nums1 = set(nums1)
+        set_nums2 = set(nums2)
+
+        for num in set_nums1:
+            if num in set_nums2:
                 result.append(num)
-        
+
         return result

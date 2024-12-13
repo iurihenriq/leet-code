@@ -1,10 +1,8 @@
 class Solution(object):
     def missingNumber(self, nums):
-        sum = 0
-        for i in range(0, len(nums)+1):
-            sum += i
+        result = (len(nums) * (len(nums) + 1)) // 2
         
         for num in nums:
-            sum -= num
+            result -= num
 
-        return sum
+        return result
